@@ -61,10 +61,10 @@ async def test_url(url, proxy, concurrency=50, duration=60):
                       f"P95={np.percentile(latencies, 95)*1000:.2f}, "
                       f"P99={np.percentile(latencies, 99)*1000:.2f}")
             else:
-                print("\033[91m[!] No successful requests.\033[0m")
+                print("\033[95m[!] No successful requests.\033[0m")
     
     except Exception as e:
-        print(f"\033[91m[!] Error with proxy {proxy}: {e}\033[0m")
+        print(f"\033[31m[!] Error with proxy {proxy}: {e}\033[0m")
 
 async def main():
     print(LOGO)
