@@ -1,5 +1,3 @@
-#This Script DoNot Use Proxy
-
 import aiohttp
 import asyncio
 from aiohttp_socks import ProxyConnector
