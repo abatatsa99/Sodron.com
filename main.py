@@ -1,14 +1,13 @@
+import os
+import sys
+import time
 from user import users 
 import requests
 from threading import Thread
 import random
 
-
-# Clear screen
-os.system('cls' if os.name == 'nt' else 'clear')
-
-# ASCII Logo
-LOGO = """
+os.system("clear")
+print("""
 \033[38;5;154m
 
 ███████╗   ████╗  █████████╗ █████████╗ ██╗   ██╗
@@ -19,7 +18,7 @@ LOGO = """
 ╚═╝      ╚═╝   ╚═╝   ╚═╝        ╚═╝     ╚═╝   ╚═╝
                                                      
 \033[0m
-"""
+""")
 headers = {
         'User-Agent' : random.choice(users)
 }
